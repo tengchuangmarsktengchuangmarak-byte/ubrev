@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Ulta Beauty Product Review </title>
+
+  <style>
+    /* Font: Horizon Type (AcherusFeral-Bold) */
+    @font-face {
+      font-family: 'Horizon Type';
+      src: url('acherus/Horizon Type - AcherusFeral-Bold.otf') format('opentype');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      font-family: 'Horizon Type', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 900;
+      background: #fcfcfc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 30px 0 0 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #FFD600;
+    }
+
+    .logo { 
+      width: 200px; 
+      margin-bottom: 20px; 
+      object-fit: contain;
+    }
+
+    .title {
+      font-family: 'Horizon Type', sans-serif;
+      font-size: 20px;
+      line-height: 1.00;
+      color: hsl(0, 0%, 4%);
+      text-shadow: 0 4px 18px rgba(0,113,206,0.18), 0 1px 0 #fff;
+      margin-bottom: 40px;
+      text-align: center;
+      letter-spacing: 1.5px;
+    }
+    .title .line1 { display: block; }
+    .title .line2 { display: block; margin-left: 2px; }
+
+    .btn {
+      font-family: 'Horizon Type', sans-serif;
+      background: #f85c24;
+      color: #fff;
+      font-size: 20px;
+      padding: 16px 56px;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.22);
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease;
+      margin-bottom: 30px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover { 
+      transform: translateY(-3px); 
+      box-shadow: 0 10px 25px rgba(221, 91, 5, 0.575); 
+    }
+
+    .steps {
+      background: #fff;
+      width: 88%;
+      max-width: 420px;
+      padding: 40px 15px;
+      border-radius: 20px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.16);
+      font-size: 22.5px;
+      color: #222;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    .step { 
+      display: flex; 
+      margin-bottom: 17px;
+    }
+    .step:last-child { margin-bottom: 0; }
+    
+    .num {
+      background: #f85c24;
+      color: #fff;
+      width: 34px; 
+      height: 34px;
+      border-radius: 50%;
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      font-size: 23px; 
+      margin-right: 16px; 
+      flex-shrink: 0;
+    }
+    .bold { font-weight: 900; }
+    .amount { color: #f70c1d; font-weight: 900; }
+
+    .giftcard {
+      width: 70%;
+      max-width: 320px;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+      margin-top: auto;
+      margin-bottom: 0;
+      display: block;
+    }
+
+    .warning {
+      background: #fff8e1;
+      color: #b87400;
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 900;
+      width: 88%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 15px 0 0 0; }
+      .title { font-size: 32px; letter-spacing: 0.5px; text-shadow: none; margin-bottom: 20px; }
+      .logo { margin-bottom: 15px; }
+      .btn { font-size: 22px; padding: 12px 32px; margin-bottom: 20px; }
+      .steps { font-size: 18px; padding: 18px 14px; margin-bottom: 0; }
+    }
+
+    /* Reduce gap between steps and giftcard on short/phone viewports */
+    @media (max-width: 600px), (max-height: 700px) {
+      .giftcard { margin-top: 50px; }
+      body { padding-bottom: 03px; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt=" Ulta Beauty logo" class="logo">
+
+  <div class="title">
+    <span class="line1">Claim Below to Claim Your $500 Gift Card </span>
+    <span class="line2"> </span>
+  </div>
+  </div>
+
+  <a href="https://glctrk.org/aff_c?offer_id=1180&aff_id=3471" target="_blank" rel="noopener noreferrer" class="btn">
+    Start Review Now
+  </a>
+
+  <div class="steps" aria-label="How it works">
+    <div class="step">
+      <div class="num">1</div>
+      <div>Click the  <span class="bold">Button Above ⬆️ </span></div>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <div>Enter your <span class="bold">email</span> & Basic Info✍🏻  </div>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <div>Complete the survey ✅ </div>
+    </div>
+    <div class="step">
+      <div class="num">4</div>
+      <div>Complete recommended deals✅ ( Important ) </div>
+    </div>
+    <div class="step">
+      <div class="num">5</div>
+      <div> Receive Your Gift card!🎉 </div>
+    </div>
+  </div>
+
+  <!-- Gift card image at the end of the landing page -->
+  <img src="giftcard.png" alt="Costco Gift Card" class="giftcard">
+
+</body>
+</html>
