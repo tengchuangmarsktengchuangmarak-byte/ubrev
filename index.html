@@ -327,15 +327,15 @@
             const name = names[Math.floor(Math.random() * names.length)];
             const city = cities[Math.floor(Math.random() * cities.length)];
             
-            // Randomly pick between men and women
-            const gender = Math.random() > 0.3 ? 'women' : 'men';
+            // Only show female users
+            const gender = 'women';
             const avatarId = Math.floor(Math.random() * 70) + 1;
             
             activityAvatar.src = `https://randomuser.me/api/portraits/${gender}/${avatarId}.jpg`;
             activityText.innerHTML = `🎉 <strong>${name} from ${city}</strong> just claimed her $500 SHEIN gift card!`;
         }
 
-        setInterval(updateActivity, 5000);
+        setInterval(updateActivity, 10000); // Update every 10 seconds
 
         function claimReward() {
             alert('🎉 Congratulations! Redirecting you to claim your $500 SHEIN gift card...');
