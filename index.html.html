@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GirlyRewards - Claim Your Gift Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
@@ -25,7 +28,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', 'Arial', sans-serif;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             background: linear-gradient(135deg, #fff0f5 0%, #ffe6ee 100%);
             color: var(--text-color);
             line-height: 1.6;
@@ -46,6 +49,14 @@
             box-shadow: var(--box-shadow);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        body > .container:first-of-type {
+            padding-bottom: 18px;
+        }
+
+        body > .container:nth-of-type(2) {
+            padding-top: 18px;
         }
 
         .logo-circle {
@@ -314,6 +325,10 @@
             border-radius: 10px;
             transition: var(--transition);
             border-left: 3px solid var(--primary-color);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            text-align: left;
         }
 
         .instruction-item:hover {
@@ -329,8 +344,48 @@
         .instruction-number {
             font-weight: 800;
             color: var(--primary-color);
-            margin-right: 5px;
             font-size: 17px;
+            width: 24px;
+            flex-shrink: 0;
+            line-height: 1.4;
+            text-align: right;
+        }
+
+        @media (max-width: 480px) {
+            .instructions-card {
+                padding: 22px 18px;
+                margin-top: 20px;
+            }
+
+            .instructions-title {
+                font-size: 20px;
+                margin-bottom: 18px;
+            }
+
+            .country-requirement {
+                font-size: 14px;
+                padding: 10px 12px;
+                margin-bottom: 18px;
+            }
+
+            .instruction-item {
+                font-size: 15px;
+                padding: 10px 12px;
+                margin-bottom: 12px;
+                gap: 8px;
+            }
+
+            .instruction-item:hover {
+                transform: none;
+            }
+
+            body > .container:first-of-type {
+                padding-bottom: 12px;
+            }
+
+            body > .container:nth-of-type(2) {
+                padding-top: 12px;
+            }
         }
         
         /* FAQ Section */
@@ -424,6 +479,7 @@
             font-size: 14px;
             line-height: 1.5;
             color: #555;
+            text-align: left;
         }
         
         .faq-item.active .faq-answer {
@@ -576,9 +632,23 @@
             <div class="faq-item">
                 <div class="faq-question">Is it Free? Is it Legit?</div>
                 <div class="faq-answer">
-                    Big brands like Sephora and Shein partner with platforms like NationalConsumer to offer free 
+                    Big brands like Sephora, Shein, Target, Amazon partner with platforms like NationalConsumer to offer free 
                     vouchers in exchange for simple feedback. It's a legit way to earn rewards—and many people 
                     have already claimed theirs.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How long do the deals take?</div>
+                <div class="faq-answer">
+                    Most offers take around 10-20 minutes to complete.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What kind of deals are these?</div>
+                <div class="faq-answer">
+                    Simple actions like app installs, trials, or short surveys.
                 </div>
             </div>
         </div>
